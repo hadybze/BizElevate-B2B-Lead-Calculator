@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Calculator | BizElevate</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="decorative-lines">
+        <svg class="line-pattern line-pattern-1" width="300" height="300" viewBox="0 0 300 300">
+            <path d="M 0 150 Q 75 50 150 150" stroke="rgba(45, 212, 191, 0.15)" stroke-width="2" fill="none"/>
+            <circle cx="0" cy="150" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+            <circle cx="75" cy="50" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+            <circle cx="150" cy="150" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+        </svg>
+        <svg class="line-pattern line-pattern-2" width="400" height="200" viewBox="0 0 400 200">
+            <path d="M 400 0 L 250 100 L 350 200" stroke="rgba(45, 212, 191, 0.15)" stroke-width="2" fill="none"/>
+            <circle cx="400" cy="0" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+            <circle cx="250" cy="100" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+            <circle cx="350" cy="200" r="4" fill="rgba(45, 212, 191, 0.3)"/>
+        </svg>
+    </div>
+
+    <!-- Background Text -->
+    <div class="background-text">CALCULATOR</div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="logo.png" alt="BizElevate" class="logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link active">Calculator</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Section: Info & Description -->
+            <div class="left-section">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 4V8L10.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Calculator</span>
+                </div>
+
+                <h1 class="main-heading">Know Exactly How Many Emails You Need to Hit Your Revenue Target</h1>
+                <p class="main-subtext">Stop guessing. This calculator shows the exact number of emails, leads, and domains required to close your target customers each month.</p>
+
+                <!-- Info Cards -->
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Precision Planning</h3>
+                            <p>See the real outbound numbers behind your revenue goal</p>
+                        </div>
+                        <div class="info-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 11L12 14L22 4M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Realistic Expectations</h3>
+                            <p>Plan with real-world conversion rates, not best-case fantasies</p>
+                        </div>
+                        <div class="info-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12H22" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Infrastructure Insights</h3>
+                            <p>Know how many domains, inboxes, and leads your system actually requires</p>
+                        </div>
+                        <div class="info-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Calculator Form -->
+            <div class="right-section">
+                <div class="calculator-card">
+                    <!-- Warning Messages -->
+                    <div id="warningContainer" class="warning-container hidden"></div>
+
+                    <!-- Target Input -->
+                    <div class="form-group">
+                        <label class="form-label">Target Customers per Month <span class="required">*</span></label>
+                        <input
+                            type="number"
+                            id="targetCustomers"
+                            class="form-input"
+                            placeholder="e.g., 5, 10, 25"
+                            min="1"
+                            step="1"
+                        >
+                        <span class="form-hint">Customers you want to close monthly from outbound</span>
+                    </div>
+
+                    <!-- Conversion Rates -->
+                    <div class="form-section">
+                        <h3 class="section-title">Your Real Conversion Rates</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Reply Rate (%)</label>
+                                <input
+                                    type="number"
+                                    id="replyRate"
+                                    class="form-input"
+                                    placeholder="e.g., 5"
+                                    min="0"
+                                    max="100"
+                                    step="0.1"
+                                >
+                                <span class="form-hint">Cold email → Any reply</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Appointment Rate (%)</label>
+                                <input
+                                    type="number"
+                                    id="appointmentRate"
+                                    class="form-input"
+                                    placeholder="e.g., 30"
+                                    min="0"
+                                    max="100"
+                                    step="0.1"
+                                >
+                                <span class="form-hint">Replies that book a meeting</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Close Rate (%)</label>
+                                <input
+                                    type="number"
+                                    id="closeRate"
+                                    class="form-input"
+                                    placeholder="e.g., 20"
+                                    min="0"
+                                    max="100"
+                                    step="0.1"
+                                >
+                                <span class="form-hint">Meetings that become paying customers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sending Capacity -->
+                    <div class="form-section">
+                        <h3 class="section-title">Your Sending Capacity & Constraints</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Workdays per Month</label>
+                                <input
+                                    type="number"
+                                    id="workdaysPerMonth"
+                                    class="form-input"
+                                    value="22"
+                                    min="1"
+                                    max="31"
+                                    step="1"
+                                >
+                                <span class="form-hint">Days you actively send cold emails</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Emails per Domain/Day</label>
+                                <input
+                                    type="number"
+                                    id="emailsPerDomain"
+                                    class="form-input"
+                                    placeholder="e.g., 30–50 (safe range)"
+                                    min="1"
+                                    step="1"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Emails per Lead</label>
+                                <input
+                                    type="number"
+                                    id="emailsPerLead"
+                                    class="form-input"
+                                    value="3"
+                                    min="1"
+                                    step="1"
+                                >
+                                <span class="form-hint">Total emails sent per lead in your sequence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Toggle -->
+                    <div class="advanced-toggle">
+                        <label class="toggle-wrapper">
+                            <input type="checkbox" id="advancedMode" class="toggle-checkbox">
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-text">Advanced: Mailbox Constraints</span>
+                        </label>
+                    </div>
+
+                    <!-- Mailbox Constraints -->
+                    <div id="mailboxConstraints" class="mailbox-section hidden">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Emails per Mailbox/Day</label>
+                                <input
+                                    type="number"
+                                    id="emailsPerMailbox"
+                                    class="form-input"
+                                    placeholder="e.g., 25"
+                                    min="1"
+                                    step="1"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Mailboxes per Domain</label>
+                                <input
+                                    type="number"
+                                    id="mailboxesPerDomain"
+                                    class="form-input"
+                                    placeholder="e.g., 3"
+                                    min="1"
+                                    step="1"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Section -->
+                    <div class="results-section" id="resultsSection">
+                        <h3 class="results-heading">Your Required Volume</h3>
+
+                        <!-- Primary Metrics -->
+                        <div class="metrics-grid">
+                            <div class="metric-box">
+                                <div class="metric-value" id="emailsPerMonth">—</div>
+                                <div class="metric-label">Emails per Month</div>
+                            </div>
+
+                            <div class="metric-box">
+                                <div class="metric-value" id="emailsPerDay">—</div>
+                                <div class="metric-label">Emails per Day</div>
+                            </div>
+
+                            <div class="metric-box">
+                                <div class="metric-value" id="leadsRequired">—</div>
+                                <div class="metric-label">Leads Required</div>
+                            </div>
+
+                            <div class="metric-box metric-highlight">
+                                <div class="metric-value" id="domainsRequired">—</div>
+                                <div class="metric-label">Domains Required</div>
+                            </div>
+                        </div>
+
+                        <!-- Funnel Reality -->
+                        <div class="funnel-section">
+                            <h4 class="funnel-title">Funnel Reality Check</h4>
+                            <div class="funnel-metrics">
+                                <div class="funnel-metric">
+                                    <span class="funnel-value" id="repliesNeeded">—</span>
+                                    <span class="funnel-label">Replies Needed</span>
+                                </div>
+                                <div class="funnel-metric">
+                                    <span class="funnel-value" id="appointmentsNeeded">—</span>
+                                    <span class="funnel-label">Appointments Needed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built by BizElevate | Outbound is math, not hope.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
